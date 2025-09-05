@@ -144,13 +144,21 @@
       <p class="lead" data-bn="কোন প্রজেক্ট মাথায় আছে? চলুন কথা বলি।" data-en="Have a project in mind? Let’s talk.">Have
         a project in mind? Let’s talk.</p>
       <div class="contact-grid">
-       <form action="https://formspree.io/f/xvgbvjrg" method="POST">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="message" placeholder="Write your message..." required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+        <form id="contactForm"
+                onsubmit="event.preventDefault();
+                alert(isBangla ? 'ধন্যবাদ! শিগগিরই যোগাযোগ করব।' : 'Thanks! I\'ll get back to you soon.');
+                this.reset();">
 
+                <input name="name" placeholder="Your name" type="text" required>
+                <input name="email" placeholder="Email" type="email" required>
+                <textarea name="message" placeholder="Write your message..." required></textarea>
+
+                <button id="sendBtn"
+                class="btn primary"
+                data-bn="বার্তা পাঠান"
+                data-en="Send Message"
+                type="submit">Send Message</button>
+        </form>
         <div class="card">
           <h3 data-bn="যোগাযোগের ঠিকানা" data-en="Reach me">Reach me</h3>
           <p>Email: <a href="mailto:riyajuljannat008@gmail.com">riyajuljannat008@gmail.com</a></p>
