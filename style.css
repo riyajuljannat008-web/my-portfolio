@@ -1,0 +1,141 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(90deg, #0a0a0a, #1a0b2e);
+  color: white;
+}
+
+/* Navbar menu */
+.menu a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+.menu a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background-color: #a855f7;
+  transition: width 0.3s ease;
+}
+.menu a:hover::after,
+.menu a.active::after {
+  width: 100%;
+}
+
+/* Buttons */
+.contact-btn,
+.btn-primary {
+  background: linear-gradient(to right, #8b5cf6, #a855f7);
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.3);
+}
+.contact-btn:hover,
+.btn-primary:hover {
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  border: 2px solid #a855f7;
+  color: #a855f7;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.btn-secondary:hover {
+  background: #a855f7;
+  color: white;
+}
+
+/* Social Icons */
+.social-icon {
+  background: white;
+  color: #1f1f1f;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.social-icon:hover {
+  background: white;
+  color: #a855f7;
+}
+
+/* Skill Cards */
+.skill-card {
+  background: #141414;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+}
+
+/* Project Buttons */
+.filter-btn {
+  background: #1a1a1a;
+  border: 1px solid #2b2b2b;
+  color: #bbb;
+  padding: 8px 22px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.filter-btn:hover {
+  background: #8b5cf6;
+  color: white;
+}
+.filter-btn.active {
+  background: linear-gradient(to right, #8b5cf6, #a855f7);
+  color: white;
+}
+
+/* Project Cards */
+.project-card {
+  background: linear-gradient(135deg, #1a1a1a, #121212);
+  border-radius: 16px;
+  padding: 16px;
+  transition: all 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.4);
+}
+
+/* Contact Inputs */
+input, textarea {
+  font-family: inherit;
+}
+input:focus, textarea:focus {
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Footer Social Icons */
+.footer-icon {
+  background: #1a1a1a;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.footer-icon:hover {
+  background: #a855f7;
+  color: white;
+}
